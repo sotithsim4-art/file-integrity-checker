@@ -3,9 +3,11 @@
 A Python tool that detects if files have been tampered with by comparing their cryptographic hashes against a saved baseline.
 
 ## What it does
-- Creates a baseline snapshot of all files in a folder using SHA-256 hashing
+- Creates a baseline snapshot of files in a folder, including subfolders, using SHA-256 hashing
 - Detects if any file has been modified, deleted, or added since the baseline was taken
 - Alerts you to any changes
+
+A file added after the baseline, including a file inside a subfolder, is reported as added. Broken and improved with Grok Build.
 
 ## How to run
 
